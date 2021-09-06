@@ -1,0 +1,27 @@
+print("")
+
+suhu = input("Masukan suhu? (Misal: 30C,20F, 21K,44R)\n:")
+drjt = int(suhu[:-1])
+inputan = suhu[-1]
+
+if inputan == "C":
+    hasil_F = round(((9 / 5) * drjt) + 32)
+    hasil_K = round(drjt + 273.15)
+    hasil_R = round((4/5) * drjt)
+    print("Fahrenheit",hasil_F)
+    print("Kelvin",hasil_K)
+    print("reamur",hasil_R)
+elif inputan == "F":
+    hasil_C = round((5/9) * (drjt - 32))
+    hasil_K = round((5/9) * (drjt - 32) + 273)
+    hasil_R = round((4/9) * (drjt - 32))
+    print("Celcius",hasil_C)
+    print("Kelvin",hasil_K)
+    print("reamur",hasil_R)
+elif inputan == "K":
+    hasil_C = round((5/9) * (drjt - 32))
+    hasil_F = round((5/9) * (drjt - 32) + 273)
+    hasil_R = round((4/9) * (drjt - 32))
+    print("Celcius",hasil_C)
+    print("Kelvin",hasil_F)
+    print("reamur",hasil_R)
